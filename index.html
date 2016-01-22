@@ -8,9 +8,24 @@
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <body ng-controller='angoller'>
-	<header><h1>Profile It</h1></header>
-	<p class="blockSize">This is a text block</p>
-	<p class="blockSize">This is a text block</p>
+	
+	<div>
+		<header><h1>Profile It</h1></header>
+		
+		<div>
+			<input ng-blur="hideMe('block1')" class ="blockDesign" placeholder="Type Here">
+			<p ng-click="showMe('block1')" ng-show="showBlock1" class="blockDesign">{{textBlock1}}</p>
+			
+		</div>
+
+		<div class="relative">
+			<input ng-blur="hideMe('block2')" class ="blockDesign" placeholder="You Type Here">
+			<p ng-click="showMe('block2')" ng-show="showBlock2" class="blockDesign">{{textBlock2}}</p>
+		</div>
+
+	</div>
 
 </body>
 </html>
+
+
