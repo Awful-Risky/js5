@@ -1,0 +1,11 @@
+
+* {
+	box-sizing: border-box;
+}
+
+.blockSize {
+	height: 30px;
+	width: 150px;
+	margin: 0;
+
+}
