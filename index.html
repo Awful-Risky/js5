@@ -13,13 +13,13 @@
 		<header><h1>Profile It</h1></header>
 		
 		<div>
-			<input ng-blur="hideMe('block1')" class ="blockDesign" placeholder="Type Here">
+			<input ng-model="newInput" ng-blur="addInput(1); hideMe('block1')" class ="blockDesign" placeholder="Click Here to Type">
 			<p ng-click="showMe('block1')" ng-show="showBlock1" class="blockDesign">{{textBlock1}}</p>
 			
 		</div>
 
 		<div class="relative">
-			<input ng-blur="hideMe('block2')" class ="blockDesign" placeholder="You Type Here">
+			<input ng-model="newInput" ng-blur="addInput(2); hideMe('block2')" class ="blockDesign" placeholder="Click Here to Type">
 			<p ng-click="showMe('block2')" ng-show="showBlock2" class="blockDesign">{{textBlock2}}</p>
 		</div>
 
