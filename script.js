@@ -37,15 +37,11 @@ angular.module('angMod').controller('angoller', ['$scope',
 			if ( id == 1) {
 				$scope.inputHolder1.push($scope.newInput);
 				$scope.textBlock1 = $scope.inputHolder1[($scope.inputHolder1.length)-1];
-				console.log($scope.inputHolder1.length);
-				console.log($scope.inputHolder1[1]);
 				$scope.newInput = [];
 			}
 			else {
 				$scope.inputHolder2.push($scope.newInput)
 				$scope.textBlock2 = $scope.inputHolder2[($scope.inputHolder2.length)-1];
-				console.log($scope.inputHolder2.length);
-				console.log($scope.inputHolder2[1]);
 				$scope.newInput = [];
 			}
 		} 
